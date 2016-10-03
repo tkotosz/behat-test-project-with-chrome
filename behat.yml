@@ -1,0 +1,15 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://localhost:8080
+      default_session: selenium2
+      javascript_session: selenium2
+      browser_name: 'chrome'
+      selenium2:                   
+        capabilities: { "browserName": "chrome", "browser": "chrome", "version":  "29", 'chrome': {'switches':['--no-sandbox']}}
+    Bex\Behat\ScreenshotExtension:
+      image_drivers:
+        local:
+          screenshot_directory: screenshots
+          clear_screenshot_directory: true
+    Cjm\Behat\StepThroughExtension: ~

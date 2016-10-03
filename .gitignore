@@ -1,0 +1,5 @@
+# Composer packages directory
+/vendor
+
+# Installed Composer packages versions
+/composer.lock
